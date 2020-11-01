@@ -2,13 +2,25 @@ const Category = require('../models/Category');
 
 module.exports = {
     viewDashboard: (req, res) => {
-        res.render('admin/dashboard/view_dashboard');
+        res.render('admin/dashboard/view_dashboard', {
+            title: "BooKost | Dashboard"
+        });
     },
 
     viewCategory: async (req, res) => {
-        const category = await Category.find();
-        // console.log(category);
-        res.render('admin/category/view_category', { category });
+        try {
+            const category = await Category.find();
+            const alertMessage = req.flash('alertMessage');
+            const alertStatus = req.flash('alertStatus');
+            const alert = { message: alertMessage, status: alertStatus };
+            res.render('admin/category/view_category', {
+                category,
+                alert,
+                title: "BooKost | Category"
+            });
+        } catch (error) {
+            res.redirect('admin/category');
+        }
     },
 
     addCategory: async (req, res) => {
@@ -16,37 +28,65 @@ module.exports = {
             const { name } = req.body;
             // console.log(name);
             await Category.create({ name });
+            req.flash('alertMessage', 'Success Add Category');
+            req.flash('alertStatus', 'success');
             res.redirect('/admin/category');
         } catch (error) {
+            req.flash('alertMessage', '$error.message');
+            req.flash('alertStatus', 'danger');
             res.redirect('/admin/category');
         }
     },
 
     editCategory: async (req, res) => {
-        const { id, name } = req.body;
-        const category = await Category.findOne({ _id: id });
-        // console.log(id);
-        category.name = name;
-        await category.save();
-        res.redirect('/admin/category');
+        try {
+            
+            const { id, name } = req.body;
+            const category = await Category.findOne({ _id: id });
+            // console.log(id);
+            category.name = name;
+            await category.save();
+            req.flash('alertMessage', 'Success Update Category');
+            req.flash('alertStatus', 'success');
+            res.redirect('/admin/category');
+        } catch (error) {
+            req.flash('alertMessage', '$error.message');
+            req.flash('alertStatus', 'danger');
+            res.redirect('/admin/category');            
+        }
     },
 
     deleteCategory: async (req, res) => {
-        const { id } = req.params;
-        const category = await Category.findOne({ _id: id });
-        await category.remove();
-        res.redirect('/admin/category');
+        try {
+            
+            const { id } = req.params;
+            const category = await Category.findOne({ _id: id });
+            await category.remove();
+            req.flash('alertMessage', 'Success Delete Category');
+            req.flash('alertStatus', 'success');
+            res.redirect('/admin/category');
+        } catch (error) {
+            req.flash('alertMessage', '$error.message');
+            req.flash('alertStatus', 'danger');
+            res.redirect('/admin/category');              
+        }
     },
     
     viewBank: (req, res) => {
-        res.render('admin/bank/view_bank');
+        res.render('admin/bank/view_bank', {
+            title: "BooKost | Bank"
+        });
     },
 
     viewItem: (req, res) => {
-        res.render('admin/item/view_item');
+        res.render('admin/item/view_item', {
+            title: "BooKost | Item"
+        });
     },
 
     viewBooking: (req, res) => {
-        res.render('admin/booking/view_booking');
+        res.render('admin/booking/view_booking', {
+            title: "BooKost | Booking"
+        });
     }
 }

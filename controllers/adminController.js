@@ -628,7 +628,7 @@ module.exports = {
       const booking = await Booking.findOne({ _id: id });
       booking.payments.status = 'Accept';
       await booking.save();
-      req.flash('alertMessage', 'Success Confirmation Pembayaran');
+      req.flash('alertMessage', 'Success Confirmation Payment');
       req.flash('alertStatus', 'success');
       res.redirect(`/admin/booking/${id}`);
     } catch (error) {
@@ -642,9 +642,9 @@ module.exports = {
       const booking = await Booking.findOne({ _id: id });
       booking.payments.status = 'Reject';
       await booking.save();
-      req.flash('alertMessage', 'Success Reject Pembayaran');
+      req.flash('alertMessage', 'Success Reject Payment');
       req.flash('alertStatus', 'success');
-      res.redirect(`/admin/booking/${id}`);
+      res.redirect(`/admin/booking/${id}`); 
     } catch (error) {
       res.redirect(`/admin/booking/${id}`);
     }

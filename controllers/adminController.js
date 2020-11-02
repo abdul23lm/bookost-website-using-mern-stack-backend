@@ -12,11 +12,16 @@ const path = require('path');
 const bcrypt = require('bcryptjs')
 
 module.exports = {
-  viewDashboard: (req, res) => {
+  viewDashboard: async (req, res) => {
     try {
-      
+      const member = await Member.find();
+      const booking = await Booking.find();
+      const item = await Item.find();
       res.render('admin/dashboard/view_dashboard', {
         title: "BooKost | Dashboard",
+        member,
+        item,
+        booking,
         user: req.session.user
       });
     } catch (error) {
@@ -330,7 +335,7 @@ module.exports = {
     }
   },
 
-  editItem: async (req, res) => {
+    editItem: async (req, res) => {
     try {
       const { id } = req.params;
       const { categoryId, title, price, city, about } = req.body;

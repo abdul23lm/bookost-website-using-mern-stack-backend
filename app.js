@@ -9,7 +9,7 @@ const flash = require('connect-flash');
 
 // Import mongoose
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/bookost', {
+mongoose.connect('mongodb+srv://abdul23lm:admin-bookost@cluster0.qiwob.mongodb.net/bookost?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,

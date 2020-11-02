@@ -10,10 +10,16 @@ const path = require('path');
 const bcrypt = require('bcryptjs')
 
 module.exports = {
-    viewDashboard: (req, res) => {
-        res.render('admin/dashboard/view_dashboard', {
-            title: "BooKost | Dashboard"
-        });
+  viewDashboard: (req, res) => {
+    try {
+      
+      res.render('admin/dashboard/view_dashboard', {
+        title: "BooKost | Dashboard",
+        user: req.session.user
+      });
+    } catch (error) {
+      
+    }
   },
   
 
@@ -77,7 +83,8 @@ module.exports = {
             res.render('admin/category/view_category', {
                 category,
                 alert,
-                title: "BooKost | Category"
+                title: "BooKost | Category",
+                user: req.session.user
             });
         } catch (error) {
             res.redirect('admin/category');
@@ -142,7 +149,8 @@ module.exports = {
             res.render('admin/bank/view_bank', {
                 bank,
                 title: "BooKost | Bank",
-                alert
+                alert,
+                user: req.session.user
             });
             } catch (error) {
             req.flash('alertMessage', `${error.message}`);
@@ -217,12 +225,6 @@ module.exports = {
     }
     },
     
-    viewItem: (req, res) => {
-        res.render('admin/item/view_item', {
-            title: "BooKost | Item"
-        });
-    },
-
     viewItem: async (req, res) => {
     try {
       const item = await Item.find()
@@ -238,8 +240,8 @@ module.exports = {
         category,
         alert,
         item,
-        action: 'view'
-        // user: req.session.user
+        action: 'view',
+        user: req.session.user
       });
     } catch (error) {
       req.flash('alertMessage', `${error.message}`);
@@ -292,7 +294,7 @@ module.exports = {
         alert,
         item,
         action: 'show image',
-        // user: req.session.user
+        user: req.session.user
       });
     } catch (error) {
       req.flash('alertMessage', `${error.message}`);
@@ -316,8 +318,8 @@ module.exports = {
         alert,
         item,
         category,
-        action: 'edit'
-        // user: req.session.user
+        action: 'edit',
+        user: req.session.user
       });
     } catch (error) {
       req.flash('alertMessage', `${error.message}`);
@@ -408,8 +410,8 @@ module.exports = {
         alert,
         itemId,
         feature,
-        activity
-        // user: req.session.user
+        activity,
+        user: req.session.user
       })
 
     } catch (error) {
@@ -583,7 +585,8 @@ module.exports = {
 
     viewBooking: (req, res) => {
         res.render('admin/booking/view_booking', {
-            title: "BooKost | Booking"
+          title: "BooKost | Booking",
+          user: req.session.user
         });
     }
 }

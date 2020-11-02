@@ -2,6 +2,8 @@ const Item = require('../models/Item');
 const Client = require('../models/Booking');
 const Category = require('../models/Category');
 const Bank = require('../models/Bank');
+const Member = require('../models/Member');
+const Booking = require('../models/Booking');
 
 module.exports = {
     landingPage: async (req, res) => {
@@ -91,7 +93,85 @@ module.exports = {
                 testimonial
             })
         } catch (error) {
-
+            console.log(error);
+            res.status(500).json({ message: "Internal server error" });
         }
+    },
+
+    bookingPage: async(req, res) => {
+            const {
+                idItem,
+                duration,
+                // price,
+                bookingStartDate,
+                bookingEndDate,
+                firstName,
+                lastName,
+                email,
+                phoneNumber,
+                accountHolder,
+                bankFrom
+        } = req.body;
+        if (!req.file) {
+            return res.status(404).json({ message: "Image not found" });
+        }
+        console.log(idItem);
+        if (
+                idItem === undefined || 
+                duration === undefined || 
+                // price === undefined || 
+                bookingStartDate === undefined || 
+                bookingEndDate === undefined || 
+                firstName === undefined || 
+                lastName === undefined || 
+                email === undefined || 
+                phoneNumber === undefined || 
+                accountHolder === undefined || 
+                bankFrom === undefined) {
+                return res.status(404).json({ message: "Complete input field" });
+        }
+        const item = await Item.findOne({ _id: idItem });
+        if (!item) {
+            return res.status(404).json({ message: "Item not found" });
+        }
+
+        item.sumBooking += 1;
+        await item.save();
+
+        let total = item.price * duration;
+        let tax = total * 0.10;
+
+        const invoice = Math.floor(1000000 + Math.random() * 9000000);
+
+        const member = await Member.create({
+            firstName,
+            lastName,
+            email,
+            phoneNumber
+        });
+
+        const newBooking = {
+            invoice,
+            bookingStartDate,
+            bookingEndDate,
+            // total: total = total + tax 
+            total: total += tax,
+            itemId: {
+                _id: item.id,
+                title: item.title,
+                price: item.price,
+                duration: duration
+            },
+            memberId: member.id,
+            payments: {
+                proofPayment: `images/${req.file.filename}`,
+                bankFrom: bankFrom,
+                accountHolder: accountHolder
+            }
+        }
+
+        const booking = await Booking.create(newBooking);
+
+        return res.status(201).json({ message: "Succes Booking", booking });
     }
 }

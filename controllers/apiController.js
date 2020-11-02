@@ -172,6 +172,6 @@ module.exports = {
 
         const booking = await Booking.create(newBooking);
 
-        return res.status(201).json({ message: "Succes Booking", booking });
+        return res.status(201).json({ message: "Success Booking", booking });
     }
 }

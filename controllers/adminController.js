@@ -211,7 +211,7 @@ module.exports = {
     }
     },
     
-    deleteBank: async (req, res) => {
+  deleteBank: async (req, res) => {
     try {
       const { id } = req.params;
       const bank = await Bank.findOne({ _id: id });
@@ -225,7 +225,7 @@ module.exports = {
       req.flash('alertStatus', 'danger');
       res.redirect('/admin/bank');
     }
-    },
+  },
     
     viewItem: async (req, res) => {
     try {

@@ -37,7 +37,7 @@ app.use(session({
   secret: 'keyboard cat',
   resave: false,
   saveUninitialized: true,
-  cookie: { maxAge: 1800000 }
+  cookie: { maxAge: 60000 }
 }));
 app.use(flash());
 app.use(logger('dev'));
@@ -50,7 +50,7 @@ app.use('/sb-admin-2', express.static(path.join(__dirname, 'node_modules/startbo
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-// admin
+// admin  
 app.use('/admin', adminRouter);
 
 // api

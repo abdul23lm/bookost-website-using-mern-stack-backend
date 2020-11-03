@@ -6,6 +6,8 @@ var logger = require('morgan');
 const methodOverride = require('method-override');
 const session = require('express-session');
 const flash = require('connect-flash');
+const cors = require('cors');
+
 
 // Import mongoose
 const mongoose = require('mongoose');
@@ -53,6 +55,8 @@ app.use('/admin', adminRouter);
 
 // api
 app.use('/api/v1/member', apiRouter);
+
+app.use(cors());
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

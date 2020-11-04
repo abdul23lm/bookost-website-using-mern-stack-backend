@@ -41,7 +41,7 @@ var data = [
     'documents': [
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc901111'),
-        name: 'Houses with beauty backyard',
+        name: 'Kostan Pria',
         itemId: [
           { _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902222') },
           { _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902223') },
@@ -51,7 +51,7 @@ var data = [
       },
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc901112'),
-        name: 'Hotels with large living room',
+        name: 'Kostan Wanita',
         itemId: [
           { _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902226') },
           { _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902227') },
@@ -61,7 +61,7 @@ var data = [
       },
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc901113'),
-        name: 'Apartment with kitchen',
+        name: 'Kostan Campur',
         itemId: [
           { _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902230') },
           { _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902231') },
@@ -79,13 +79,13 @@ var data = [
       // Tabby Town
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902222'),
-        title: 'Tabby Town',
-        price: 12,
+        title: 'Kost Dahlan Kukusan',
+        price: 90000,
         sumBooking: 1,
         country: 'Indonesia',
-        city: 'Lampung',
+        city: 'Jakarta',
         isPopular: false,
-        description: 'Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
         unit: 'hari',
         imageId: [
           // done
@@ -125,13 +125,13 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902223'),
-        title: 'Seattle Rain',
-        price: 20,
+        title: 'Kost Marsinah Cilodong',
+        price: 85000,
         sumBooking: 2,
         country: 'Indonesia',
-        city: 'Bandung',
+        city: 'Jakarta',
         isPopular: false,
-        description: 'Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
         unit: 'hari',
         imageId: [
           // done
@@ -171,13 +171,13 @@ var data = [
       // Wodden Pit
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902224'),
-        title: 'Wodden Pit',
-        price: 20,
+        title: 'Kost Putri Violet Bejit',
+        price: 110000,
         sumBooking: 3,
         country: 'Indonesia',
-        city: 'Bandung',
+        city: 'Jakarta',
         isPopular: false,
-        description: 'Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
         unit: 'hari',
         imageId: [
           // done
@@ -221,9 +221,9 @@ var data = [
         price: 20,
         sumBooking: 4,
         country: 'Indonesia',
-        city: 'Bandung',
+        city: 'Jakarta',
         isPopular: false,
-        description: 'Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
         unit: 'hari',
         imageId: [
           // done
@@ -267,9 +267,9 @@ var data = [
         price: 20,
         sumBooking: 5,
         country: 'Indonesia',
-        city: 'Bandung',
+        city: 'Jakarta',
         isPopular: false,
-        description: 'Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
         unit: 'hari',
         imageId: [
           // done
@@ -313,9 +313,9 @@ var data = [
         price: 20,
         sumBooking: 6,
         country: 'Indonesia',
-        city: 'Bandung',
+        city: 'Jakarta',
         isPopular: false,
-        description: 'Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
         unit: 'hari',
         imageId: [
           // done
@@ -359,9 +359,9 @@ var data = [
         price: 20,
         sumBooking: 7,
         country: 'Indonesia',
-        city: 'Bandung',
+        city: 'Jakarta',
         isPopular: false,
-        description: 'Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
         unit: 'hari',
         imageId: [
           // done
@@ -405,9 +405,9 @@ var data = [
         price: 20,
         sumBooking: 8,
         country: 'Indonesia',
-        city: 'Bandung',
+        city: 'Jakarta',
         isPopular: false,
-        description: 'Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
         unit: 'hari',
         imageId: [
           // done
@@ -451,9 +451,9 @@ var data = [
         price: 20,
         sumBooking: 9,
         country: 'Indonesia',
-        city: 'Bandung',
+        city: 'Jakarta',
         isPopular: false,
-        description: 'Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
         unit: 'hari',
         imageId: [
           // done
@@ -497,9 +497,9 @@ var data = [
         price: 20,
         sumBooking: 11,
         country: 'Indonesia',
-        city: 'Bandung',
+        city: 'Jakarta',
         isPopular: false,
-        description: 'Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
         unit: 'hari',
         imageId: [
           // done
@@ -543,9 +543,9 @@ var data = [
         price: 20,
         sumBooking: 13,
         country: 'Indonesia',
-        city: 'Bandung',
+        city: 'Jakarta',
         isPopular: false,
-        description: 'Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
         unit: 'hari',
         imageId: [
           // done
@@ -585,13 +585,13 @@ var data = [
       // Stays Home
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902233'),
-        title: 'Stays Home',
-        price: 20,
+        title: 'Cahaya Inn',
+        price: 200000,
         sumBooking: 14,
         country: 'Indonesia',
-        city: 'Bandung',
+        city: 'Jakarta',
         isPopular: false,
-        description: 'Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
         unit: 'hari',
         imageId: [
           { _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90cd36') },
@@ -1063,8 +1063,8 @@ var data = [
     'documents': [
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc903345'),
-        username: 'admin',
-        password: 'rahasia',
+        username: 'admin@bookost.id',
+        password: 'bookost2020',
       },
     //   {
     //     _id: mongoose.Types.ObjectId('5e96cbe292b97300fc903346'),

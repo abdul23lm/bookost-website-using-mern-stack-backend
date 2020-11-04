@@ -27,7 +27,7 @@ module.exports = {
                     }
                 })
         const client = await Client.find();
-        const city = await Item.find({ _id: city });
+        const city = await Category.find();
         const boardingHouse = await Item.find();
 
         for (let i = 0; i < category.length; i++) {

@@ -79,8 +79,8 @@ var data = [
       // Tabby Town
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902222'),
-        title: 'Kost Dahlan Kukusan',
-        price: 90000,
+        title: 'Tabby Town',
+        price: 14,
         sumBooking: 1,
         country: 'Indonesia',
         city: 'Jakarta',
@@ -125,8 +125,8 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902223'),
-        title: 'Kost Marsinah Cilodong',
-        price: 85000,
+        title: 'Seattle Rain',
+        price: 23,
         sumBooking: 2,
         country: 'Indonesia',
         city: 'Jakarta',
@@ -171,8 +171,8 @@ var data = [
       // Wodden Pit
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902224'),
-        title: 'Kost Putri Violet Bejit',
-        price: 110000,
+        title: 'Wodden Pit',
+        price: 22,
         sumBooking: 3,
         country: 'Indonesia',
         city: 'Jakarta',

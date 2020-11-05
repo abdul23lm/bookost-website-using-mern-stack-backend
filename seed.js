@@ -953,7 +953,7 @@ var data = [
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90bb04'),
         name: 'Vnesia Mall',
-        type: 'Pusat Perbelanjaan',
+        type: 'Mall',
         imageUrl: 'images/activity-4.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902222'),
       },
@@ -982,7 +982,7 @@ var data = [
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90bb08'),
         name: 'Vnesia Mall',
-        type: 'Pusat Perbelanjaan',
+        type: 'Mall',
         imageUrl: 'images/activity-4.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902223'),
       }

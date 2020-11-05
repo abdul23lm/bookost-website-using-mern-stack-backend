@@ -76,11 +76,11 @@ var data = [
   {
     'model': 'Item',
     'documents': [
-      // Tabby Town
+      // Kost Intan Pasar Minggu
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902222'),
-        title: 'Tabby Town',
-        price: 14,
+        title: 'Kost Intan Pasar Minggu',
+        price: 120000,
         sumBooking: 1,
         country: 'Indonesia',
         city: 'Jakarta',
@@ -121,12 +121,12 @@ var data = [
         ],
         categoryId: '5e96cbe292b97300fc901111'
       },
-      // Seattle Rain
+      // Kost Ibu Siska Duren Tiga
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902223'),
-        title: 'Seattle Rain',
-        price: 23,
+        title: 'Kost Ibu Siska Duren Tiga',
+        price: 180000,
         sumBooking: 2,
         country: 'Indonesia',
         city: 'Jakarta',
@@ -168,11 +168,11 @@ var data = [
         categoryId: '5e96cbe292b97300fc901111'
       },
 
-      // Wodden Pit
+      // Rumah Kost Perikanan Kalibata
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902224'),
-        title: 'Wodden Pit',
-        price: 22,
+        title: 'Rumah Kost Perikanan Kalibata',
+        price: 175000,
         sumBooking: 3,
         country: 'Indonesia',
         city: 'Jakarta',
@@ -217,8 +217,8 @@ var data = [
       // Anggana
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902225'),
-        title: 'Anggana',
-        price: 20,
+        title: 'Cahaya Inn',
+        price: 200000,
         sumBooking: 4,
         country: 'Indonesia',
         city: 'Jakarta',
@@ -260,11 +260,11 @@ var data = [
         categoryId: '5e96cbe292b97300fc901111'
       },
 
-      // Green Park
+      // Kost H. Mudji Pancoran
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902226'),
-        title: 'Green Park',
-        price: 20,
+        title: 'Kost H. Mudji Pancoran',
+        price: 160000,
         sumBooking: 5,
         country: 'Indonesia',
         city: 'Jakarta',
@@ -306,11 +306,11 @@ var data = [
         categoryId: '5e96cbe292b97300fc901112'
       },
 
-      // Podo Wae
+      // Kost H. Kodja Kukusan
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902227'),
-        title: 'Podo Wae',
-        price: 20,
+        title: 'Kost H. Kodja Kukusan',
+        price: 150000,
         sumBooking: 6,
         country: 'Indonesia',
         city: 'Jakarta',
@@ -352,11 +352,11 @@ var data = [
         categoryId: '5e96cbe292b97300fc901112'
       },
 
-      // Silver Rain
+      // Kost Mercu Bogor Kota
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902228'),
-        title: 'Silver Rain',
-        price: 20,
+        title: 'Kost Mercu Bogor Kota',
+        price: 195000,
         sumBooking: 7,
         country: 'Indonesia',
         city: 'Jakarta',
@@ -398,11 +398,11 @@ var data = [
         categoryId: '5e96cbe292b97300fc901112'
       },
 
-      // Cashville
+      // Kost Devira Rawalumbu
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902229'),
-        title: 'Cashville',
-        price: 20,
+        title: 'Kost Devira Rawalumbu',
+        price: 170000,
         sumBooking: 8,
         country: 'Indonesia',
         city: 'Jakarta',
@@ -444,11 +444,11 @@ var data = [
         categoryId: '5e96cbe292b97300fc901112'
       },
 
-      // PS Wood
+      // Sigris House Rawalumbu
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902230'),
-        title: 'PS Wood',
-        price: 20,
+        title: 'Sigris House Rawalumbu',
+        price: 180000,
         sumBooking: 9,
         country: 'Indonesia',
         city: 'Jakarta',
@@ -490,11 +490,11 @@ var data = [
         categoryId: '5e96cbe292b97300fc901113'
       },
 
-      // One Five
+      // Kost Sugoy Kayuringin
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902231'),
-        title: 'One Five',
-        price: 20,
+        title: 'Kost Sugoy Kayuringin',
+        price: 180000,
         sumBooking: 11,
         country: 'Indonesia',
         city: 'Jakarta',
@@ -536,11 +536,11 @@ var data = [
         categoryId: '5e96cbe292b97300fc901113'
       },
 
-      // Minimal
+      // Kost Natasha Bekasi Timur
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902232'),
-        title: 'Minimal',
-        price: 20,
+        title: 'Kost Natasha Bekasi Timur',
+        price: 180000,
         sumBooking: 13,
         country: 'Indonesia',
         city: 'Jakarta',
@@ -582,10 +582,10 @@ var data = [
         categoryId: '5e96cbe292b97300fc901113'
       },
 
-      // Stays Home
+      // Kost Bu Uneh Bogor Timur
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc902233'),
-        title: 'Cahaya Inn',
+        title: 'Kost Bu Uneh Bogor Timur',
         price: 200000,
         sumBooking: 14,
         country: 'Indonesia',
@@ -795,7 +795,7 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90aa01'),
-        name: 'bedroom',
+        name: 'Kasur',
         qty: 2,
         imageUrl: 'images/feature-1.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902222'),
@@ -803,7 +803,7 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90aa02'),
-        name: 'living room',
+        name: 'Kamar Mandi di Dalam',
         qty: 23,
         imageUrl: 'images/feature-2.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902222'),
@@ -811,7 +811,7 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90aa03'),
-        name: 'televison',
+        name: 'Meja',
         qty: 12,
         imageUrl: 'images/feature-3.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902222'),
@@ -819,7 +819,7 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90aa04'),
-        name: 'televison',
+        name: 'WIFI',
         qty: 5,
         imageUrl: 'images/feature-4.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902222'),
@@ -827,7 +827,7 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90aa05'),
-        name: 'mbp/s',
+        name: 'AC',
         qty: 5,
         imageUrl: 'images/feature-5.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902222'),
@@ -835,7 +835,7 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90aa06'),
-        name: 'unit ready',
+        name: 'Lemari',
         qty: 5,
         imageUrl: 'images/feature-6.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902222'),
@@ -843,7 +843,7 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90aa07'),
-        name: 'refigrator',
+        name: 'TV',
         qty: 5,
         imageUrl: 'images/feature-7.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902222'),
@@ -851,7 +851,7 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90aa08'),
-        name: 'televion',
+        name: 'CCTV',
         qty: 5,
         imageUrl: 'images/feature-8.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902222'),
@@ -860,7 +860,7 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90aa09'),
-        name: 'bedroom',
+        name: 'Kasur',
         qty: 2,
         imageUrl: 'images/feature-1.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902223'),
@@ -868,7 +868,7 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90aa10'),
-        name: 'living room',
+        name: 'Kamar Mandi di Dalam',
         qty: 23,
         imageUrl: 'images/feature-2.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902223'),
@@ -876,7 +876,7 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90aa11'),
-        name: 'televison',
+        name: 'Meja',
         qty: 12,
         imageUrl: 'images/feature-3.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902223'),
@@ -884,7 +884,7 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90aa12'),
-        name: 'televison',
+        name: 'WIFI',
         qty: 5,
         imageUrl: 'images/feature-4.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902223'),
@@ -892,7 +892,7 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90aa13'),
-        name: 'mbp/s',
+        name: 'AC',
         qty: 5,
         imageUrl: 'images/feature-5.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902223'),
@@ -900,7 +900,7 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90aa14'),
-        name: 'unit ready',
+        name: 'Lemari',
         qty: 5,
         imageUrl: 'images/feature-6.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902223'),
@@ -908,7 +908,7 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90aa15'),
-        name: 'refigrator',
+        name: 'TV',
         qty: 5,
         imageUrl: 'images/feature-7.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902223'),
@@ -916,7 +916,7 @@ var data = [
       {
         // done
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90aa16'),
-        name: 'televion',
+        name: 'CCTV',
         qty: 5,
         imageUrl: 'images/feature-8.png',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902223'),
@@ -931,59 +931,59 @@ var data = [
       // done
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90bb01'),
-        name: 'Green Lake',
-        type: 'Nature',
-        imageUrl: 'images/activity-1.png',
+        name: 'Universitas Jayabaya',
+        type: 'Universitas',
+        imageUrl: 'images/activity-1.jpg',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902222'),
       },
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90bb02'),
-        name: 'Dog Clubs',
-        type: 'Pool',
-        imageUrl: 'images/activity-2.png',
+        name: 'Rumah Sakit OMNI',
+        type: 'Rumah Sakit',
+        imageUrl: 'images/activity-2.jpg',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902222'),
       },
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90bb03'),
-        name: 'Labour and Wait',
-        type: 'Shopping',
-        imageUrl: 'images/activity-3.png',
+        name: 'Taman Mini Indonesia Indah',
+        type: 'Tempat Wisata',
+        imageUrl: 'images/activity-3.jpg',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902222'),
       },
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90bb04'),
-        name: 'Labour and Wait',
-        type: 'Shopping',
-        imageUrl: 'images/activity-4.png',
+        name: 'Vnesia Mall',
+        type: 'Pusat Perbelanjaan',
+        imageUrl: 'images/activity-4.jpg',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902222'),
       },
       // done 2
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90bb05'),
-        name: 'Green Lake',
-        type: 'Nature',
-        imageUrl: 'images/activity-3.png',
+        name: 'Taman Mini Indonesia Indah',
+        type: 'Tempat Wisata',
+        imageUrl: 'images/activity-3.jpg',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902223'),
       },
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90bb06'),
-        name: 'Dog Clubs',
-        type: 'Pool',
-        imageUrl: 'images/activity-2.png',
+        name: 'Rumah Sakit OMNI',
+        type: 'Rumah Sakit',
+        imageUrl: 'images/activity-2.jpg',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902223'),
       },
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90bb07'),
-        name: 'Labour and Wait',
-        type: 'Shopping',
-        imageUrl: 'images/activity-1.png',
+        name: 'Universitas Jayabaya',
+        type: 'Universitas',
+        imageUrl: 'images/activity-1.jpg',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902223'),
       },
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90bb08'),
-        name: 'Labour and Wait',
-        type: 'Shopping',
-        imageUrl: 'images/activity-4.png',
+        name: 'Vnesia Mall',
+        type: 'Pusat Perbelanjaan',
+        imageUrl: 'images/activity-4.jpg',
         itemId: mongoose.Types.ObjectId('5e96cbe292b97300fc902223'),
       }
     ]
@@ -1028,13 +1028,13 @@ var data = [
         firstName: 'Abdul',
         lastName: 'LM',
         email: 'abdul23lm@gmail.com',
-        phoneNumber: '082377954008'
+        phoneNumber: '082130314423'
       },
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc903334'),
-        firstName: 'Yein',
-        lastName: 'Narayana',
-        email: 'abdul23lm1207@gmail.com',
+        firstName: 'Fajar',
+        lastName: 'Sujai',
+        email: 'fajarsujai@gmail.com',
         phoneNumber: '082377954008'
       }
     ]
@@ -1046,14 +1046,14 @@ var data = [
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc903322'),
         nameBank: 'Mandiri',
         nomorRekening: '089898',
-        name: 'Abdul',
+        name: 'PT. Bookost Indonesia',
         imageUrl: 'images/logo bca.png'
       },
       {
         _id: mongoose.Types.ObjectId('5e96cbe292b97300fc903323'),
         nameBank: 'BCA',
         nomorRekening: '878678',
-        name: 'Abdul',
+        name: 'PT. Bookost Indonesia',
         imageUrl: 'images/logo mandiri.png'
       }
     ]
